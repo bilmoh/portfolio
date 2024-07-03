@@ -19,8 +19,6 @@
     font-family: inherit;
 }
 
-
-
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -174,6 +172,30 @@ textarea {
     border: 2px solid rgba(var(--main-color), 1);
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.btn--pagination {
+    margin: 0 1rem;
+    /* Adjust the margin as needed */
+}
+
+.pagination__page-number {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    /* Add other styles as needed */
 }
 
 .sec-pad {
