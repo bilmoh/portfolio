@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+
+    const phone = "70707070"
+    const email = "test@gmail.com"
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -133,7 +136,7 @@ export default function Home() {
                     <h2 className="heading heading-sec heading-sec__mb-med">
                         <span className="heading-sec__main heading-sec__main--lt">Contact</span>
                         <span className="heading-sec__sub heading-sec__sub--lt">
-                            Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email at <a href="mailto:billalmohammad2898@gmail.com">billalmohammad2898@gmail.com</a> or call me directly at <a href="tel:07951505988">07951505988</a>.
+                            Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email at <a href={`mailto:${email}`}>{email}</a> or call me directly at <a href={`tel:${phone}`}>{phone}</a>.
                         </span>
                     </h2>
                 </div>
