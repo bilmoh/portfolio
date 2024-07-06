@@ -23,7 +23,7 @@ export default function Header() {
                     <Link className="header__logo-sub" to="/">BILMOH_CODES</Link>
                 </div>
 
-                <nav className="header__main">
+                <nav className={`header__links ${menuActive ? 'd-none' : ''}`}>
                     <div className="header__link-wrapper">
                         <Link to="./#home" className="header__link" onClick={closeMenu}>
                             Home
@@ -38,12 +38,12 @@ export default function Header() {
                             Contacts
                         </Link>
                     </div>
-
-                    <div className="header__main-ham-menu-cont" onClick={toggleMenu}>
-                        <img src="/assets/svg/ham-menu.svg" alt="hamburger menu" className={`header__main-ham-menu ${menuActive ? 'd-none' : ''}`} />
-                        <img src="/assets/svg/ham-menu-close.svg" alt="hamburger menu close" className={`header__main-ham-menu-close ${menuActive ? '' : 'd-none'}`} />
-                    </div>
                 </nav>
+
+                <div className="header__main-ham-menu-cont" onClick={toggleMenu}>
+                    <img src="/assets/svg/ham-menu.svg" alt="hamburger menu" className={`header__main-ham-menu ${menuActive ? 'd-none' : ''}`} />
+                    <img src="/assets/svg/ham-menu-close.svg" alt="hamburger menu close" className={`header__main-ham-menu-close ${menuActive ? '' : 'd-none'}`} />
+                </div>
             </div>
 
             <div className={`header__sm-menu ${menuActive ? 'header__sm-menu--active' : ''}`}>
@@ -56,7 +56,7 @@ export default function Header() {
                             <a href="./#about" onClick={closeMenu}>About</a>
                         </li>
                         <li className="header__sm-menu-link">
-                            <a href="#projects" onClick={closeMenu}>Projects</a>
+                            <a href="/projects" onClick={closeMenu}>Projects</a>
                         </li>
                         <li className="header__sm-menu-link">
                             <a href="#contact" onClick={closeMenu}>Contact</a>

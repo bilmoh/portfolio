@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
+import { ContactUs } from "../components/Contact";
+
 export default function Home() {
+    const [projects, setProjects] = React.useState([]);
 
-    const phone = "70707070"
-    const email = "test@gmail.com"
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
+    React.useEffect(() => {
         fetch("../../projects.json")
             .then(res => res.json())
             .then(data => {
@@ -136,11 +135,12 @@ export default function Home() {
                     <h2 className="heading heading-sec heading-sec__mb-med">
                         <span className="heading-sec__main heading-sec__main--lt">Contact</span>
                         <span className="heading-sec__sub heading-sec__sub--lt">
-                            Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email at <a href={`mailto:${email}`}>{email}</a> or call me directly at <a href={`tel:${phone}`}>{phone}</a>.
+                            Please reach out if you have any questions! I'm happy to jump on a video call to brainstorm projects and ideas. Send me an email by filling out the form below.
                         </span>
+                        {<ContactUs />}
                     </h2>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }

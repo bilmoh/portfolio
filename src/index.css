@@ -198,6 +198,57 @@ textarea {
     /* Add other styles as needed */
 }
 
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    margin-top: 1.5rem;
+
+    input {
+        width: 70%;
+        height: 60px;
+        padding: 7px;
+        margin-top: 1rem;
+        outline: none;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 1px solid rgb(220, 220, 220);
+
+        &:focus {
+            border: 2px solid rgba(0, 206, 158, 1);
+        }
+    }
+
+    textarea {
+        max-width: 70%;
+        min-width: 70%;
+        width: 100%;
+        max-height: 100px;
+        min-height: 100px;
+        padding: 7px;
+        margin-top: 1rem;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid rgb(220, 220, 220);
+        font-size: 20px;
+
+        &:focus {
+            border: 2px solid rgba(0, 206, 158, 1);
+        }
+    }
+
+    input[type="submit"] {
+        margin-top: 2rem;
+        cursor: pointer;
+        background: rgb(249, 105, 14);
+        color: white;
+        border: none;
+    }
+}
+
 .sec-pad {
     padding: 12rem 0;
 }
@@ -216,7 +267,7 @@ textarea {
 
 .home-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(var(--main-color), 0.8), rgba(var(--main-color), 0.8)), url(../src/assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(var(--main-color), 0.8), rgba(var(--main-color), 0.8)), url(../public/assets/svg/common-bg.svg);
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -360,7 +411,7 @@ textarea {
 }
 
 .contact {
-    background: linear-gradient(to right, rgba(var(--main-color), 0.8), rgba(var(--main-color), 0.8)), url(../src/assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(var(--main-color), 0.8), rgba(var(--main-color), 0.8)), url(../public/assets/svg/common-bg.svg);
     background-size: cover;
     background-position: center;
 }
@@ -368,17 +419,17 @@ textarea {
 
 .project-cs-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(var(--main-color), 0.8), rgba(var(--main-color), 0.8)), url(../src/assets/svg/common-bg.svg);
+    background: linear-gradient(to right, rgba(var(--main-color), 0.8), rgba(var(--main-color), 0.8)), url(../public/assets/svg/common-bg.svg);
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
 .project-cs-hero__content {
+    display: flex;
+    flex-direction: column;
     padding: 25rem 0 17rem 0;
-    max-width: 90rem;
-    width: 92%;
-    margin: auto;
+    width: 100%;
 }
 
 .project-cs-hero__info {
@@ -465,9 +516,15 @@ textarea {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background: #000;
     background: #fff;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
 }
 
 .header__content {
@@ -488,6 +545,7 @@ textarea {
 .header__logo-container:hover {
     color: rgba(var(--main-color), 1);
 }
+
 
 .header__logo-img-cont {
     width: 5rem;
@@ -557,12 +615,19 @@ textarea {
     transition: all .3s;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header__sm-menu--active {
     visibility: hidden;
     opacity: 0;
+}
+
+.header__sm-menu-links {
+    padding: 2rem 0;
+}
+
+.header__sm-menu-link {
+    text-align: center;
 }
 
 .header__sm-menu-link a {
@@ -571,7 +636,7 @@ textarea {
     padding: 2.5rem 3rem;
     font-size: 1.6rem;
     color: #333;
-    text-align: right;
+    text-align: center;
     border-bottom: 1px solid #eee;
     font-weight: 700;
     text-transform: uppercase;
@@ -701,7 +766,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 40.625em) {
     .heading-primary {
         font-size: 4.5rem;
     }
@@ -784,6 +849,18 @@ textarea {
     .header__sm-menu--active {
         visibility: visible;
         opacity: 1;
+    }
+
+    form {
+
+        input {
+            font-size: 18px;
+        }
+
+        textarea {
+            font-size: 18px;
+        }
+
     }
 
     .main-footer__upper {

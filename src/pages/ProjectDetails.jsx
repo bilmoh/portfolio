@@ -24,17 +24,20 @@ export default function ProjectDetails() {
 
     return (
         <section className="project-details">
-            <div className="project-cs-hero__content">
-                <h1 className="heading-primary">{project.title}</h1>
-                <div className="project-cs-hero__info">
-                    <p className="text-primary">
-                        {project.intro}
-                    </p>
+            <div className="project-cs-hero__content project-cs-hero">
+                <div >
+                    <h1 className="heading-primary">{project.title}</h1>
+                    <div className="project-cs-hero__info">
+                        <p className="text-primary">
+                            {project.intro}
+                        </p>
+                    </div>
                 </div>
                 <div className="project-cs-hero__cta">
                     <a href={project.liveLink} className="btn btn--bg" target="_blank">Live Link</a>
                 </div>
             </div>
+
             <div className="main-container">
                 <div className="project-details__content">
                     <div className="project-details__showcase-img-cont">
@@ -55,7 +58,7 @@ export default function ProjectDetails() {
                             <h3 className="project-details__content-title">Tools Used</h3>
                             <div className="skills">
                                 {project.tags.map((tag, index) => (
-                                    <div key={index} classNameName="skills__skill">{tag}</div>
+                                    <div key={index} className="skills__skill">{tag}</div>
                                 ))}
                             </div>
                         </div>

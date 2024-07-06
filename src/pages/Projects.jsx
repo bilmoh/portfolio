@@ -4,14 +4,15 @@ import { Link } from "react-router-dom";
 export default function Projects() {
     const [projects, setProjects] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const projectsPerPage = 3;
+    const projectsPerPage = 8;
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch("../../projects.json");
                 const data = await response.json();
-                setProjects(data);
+                // Reverse the order of projects to display latest first
+                setProjects(data.reverse());
             } catch (error) {
                 console.error('Error fetching projects:', error);
             }
@@ -22,6 +23,7 @@ export default function Projects() {
 
     const indexOfLastProject = currentPage * projectsPerPage;
     const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+    // Use useMemo to memoize the current projects slice
     const currentProjects = useMemo(() => projects.slice(indexOfFirstProject, indexOfLastProject), [projects, currentPage]);
 
     const nextPage = () => {
