@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-import profile from "/src/assets/img/avatar.jpeg"
-
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
 
@@ -19,7 +17,7 @@ export default function Header() {
             <div className="header__content">
                 <div className="header__logo-container" onClick={closeMenu}>
                     <div className="header__logo-img-cont">
-                        <img src={profile} alt="Billal Mohammad Logo Image" className="header__logo-img" />
+                        <img src="/assets/img/avatar.jpeg" alt="Billal Mohammad Logo Image" className="header__logo-img" />
                     </div>
                     <Link className="header__logo-sub" to="/">BILMOH_CODES</Link>
                 </div>

@@ -1,9 +1,5 @@
 import React from "react";
 
-import linkedinIcon from "/src/assets/img/icons/linkedin-ico.png"
-import githubIcon from "/src/assets/img/icons/github-ico.png"
-import twitterIcon from "/src/assets/img/icons/twitter-ico.png"
-
 export default function Footer() {
     return (
         <footer className="main-footer">
@@ -16,13 +12,13 @@ export default function Footer() {
 
                         <div className="main-footer__social-cont">
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/billal-mohammad/">
-                                <img className="main-footer__icon" src={linkedinIcon} alt="icon" />
+                                <img className="main-footer__icon" src="/assets/img/icons/linkedin-ico.png" alt="icon" />
                             </a>
                             <a target="_blank" rel="noreferrer" href="https://github.com/bilmoh">
-                                <img className="main-footer__icon" src={githubIcon} alt="icon" />
+                                <img className="main-footer__icon" src="/assets/img/icons/github-ico.png" alt="icon" />
                             </a>
                             <a target="_blank" rel="noreferrer" href="https://x.com/bilmoh_codes">
-                                <img className="main-footer__icon" src={twitterIcon} alt="icon" />
+                                <img className="main-footer__icon" src="/assets/img/icons/twitter-ico.png" alt="icon" />
                             </a>
                         </div>
                     </div>
