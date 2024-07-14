@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-import profile from "/assets/img/avatar.jpeg"
-
 export default function Header() {
     const [menuActive, setMenuActive] = useState(false);
 
@@ -19,7 +17,7 @@ export default function Header() {
             <div className="header__content">
                 <div className="header__logo-container" onClick={closeMenu}>
                     <div className="header__logo-img-cont">
-                        <img src={profile} alt="Billal Mohammad Logo Image" className="header__logo-img" />
+                        <img src="/assets/img/avatar.jpeg" alt="Billal Mohammad Logo Image" className="header__logo-img" />
                     </div>
                     <Link className="header__logo-sub" to="/">BILMOH_CODES</Link>
                 </div>
@@ -42,8 +40,8 @@ export default function Header() {
                 </nav>
 
                 <div className="header__main-ham-menu-cont" onClick={toggleMenu}>
-                    <img src="src/assets/svg/ham-menu.svg" alt="hamburger menu" className={`header__main-ham-menu ${menuActive ? 'd-none' : ''}`} />
-                    <img src="src/assets/svg/ham-menu-close.svg" alt="hamburger menu close" className={`header__main-ham-menu-close ${menuActive ? '' : 'd-none'}`} />
+                    <img src="/assets/svg/ham-menu.svg" alt="hamburger menu" className={`header__main-ham-menu ${menuActive ? 'd-none' : ''}`} />
+                    <img src="/assets/svg/ham-menu-close.svg" alt="hamburger menu close" className={`header__main-ham-menu-close ${menuActive ? '' : 'd-none'}`} />
                 </div>
             </div>
 
