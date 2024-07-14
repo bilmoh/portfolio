@@ -1,14 +1,23 @@
 [
     {
         "id": 1,
-        "title": "Project 1",
-        "summary": "Description of project one",
-        "mainImg": "/assets/img/quiz.jpg",
-        "intro": "this is project intro paragraph",
-        "description1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "description2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "coverImg": "./src/assets/img/note-taking-app.png",
+        "title": "Note Taking App",
+        "summary": "",
+        "featuredImg": "../src/assets/img/note-taking-app.png",
+        "intro": "",
+        "problemStatement": "",
+        "challengesSolutions": "",
+        "ImpactFeedback": "",
         "liveLink": "http://www.google.co.uk",
         "codeLink": "http://www.google.co.uk",
+        "features": [
+            "Developed a dynamic note-taking application using React, enabling users to create, update, and delete notes with a rich-text editor.",
+            "Implemented a responsive user interface with a split-screen layout using the react-split library.",
+            "Utilised Firebase Firestore for real-time synchronisation of notes, ensuring data is consistent across sessions and devices",
+            "Managed state using React hooks (useState, useEffect) to handle complex interactions and asynchronous data updates.",
+            "Integrated real-time updates and snapshot listeners from Firebase Firestore to maintain up-to-date notes without having to manually refresh."
+        ],
         "tags": [
             "HTML",
             "CSS",
@@ -17,18 +26,55 @@
             "GIT"
         ],
         "isFeatured": false,
-        "date": "2024-06-27"
+        "date": "2024-06-28"
     },
     {
         "id": 2,
-        "title": "Project 2",
-        "summary": "Description of project one",
-        "mainImg": "/assets/img/quiz.jpg",
-        "intro": "this is project intro paragraph",
-        "description1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "description2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "coverImg": "./src/assets/img/van-rental-app.jpg",
+        "title": "Van Rental App",
+        "summary": "",
+        "featuredImg": "../src/assets/img/van-rental-app.jpg",
+        "intro": "",
+        "problemStatement": "",
+        "challengesSolutions": "",
+        "ImpactFeedback": "",
         "liveLink": "http://www.google.co.uk",
         "codeLink": "http://www.google.co.uk",
+        "features": [
+            "Developed a comprehensive van rental web application using React, allowing users to browse, view details, about vans.",
+            "Created an admin dashboard for hosts to manage van listings, review income, and read customer reviews.",
+            "Implemented dynamic routing with react-router-dom for seamless navigation, including protected host-specific routes.",
+            "Utilised Firebase Firestore for real-time data storage and retrieval.",
+            "Built a user-friendly host dashboard with features to update pricing, upload photos, and monitor earnings and reviews.",
+            "Used React hooks (useState, useEffect) for state management and asynchronous data operations."
+        ],
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "GIT"
+        ],
+        "isFeatured": false,
+        "date": "2024-06-28"
+    },
+    {
+        "id": 3,
+        "coverImg": "./src/assets/img/todo-app.png",
+        "title": "To-Do List",
+        "summary": "",
+        "featuredImg": "../src/assets/img/todo-app.png",
+        "intro": "",
+        "problemStatement": "",
+        "challengesSolutions": "",
+        "ImpactFeedback": "",
+        "liveLink": "http://www.google.co.uk",
+        "codeLink": "http://www.google.co.uk",
+        "features": [
+            "Implemented Create, Read, Update, and Delete (CRUD) operations to manage tasks, allowing users to create new tasks, update existing ones, and remove tasks they no longer need.",
+            "Clean and responsive user interface with intuitive design",
+            "Implemented React hooks (useState, useEffect) for state and effect management:"
+        ],
         "tags": [
             "HTML",
             "CSS",

@@ -7,7 +7,7 @@ export default function ProjectDetails() {
     const [project, setProject] = useState(null)
 
     React.useEffect(() => {
-        fetch("../src/projects.json")
+        fetch("/projects.json")
             .then(res => res.json())
             .then(data => {
                 const project = data.find(p => p.id === parseInt(id, 10))

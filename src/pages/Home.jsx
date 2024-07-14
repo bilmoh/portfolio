@@ -18,7 +18,7 @@ export default function Home() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("../src/projects.json");
+                const response = await fetch("/projects.json");
                 const data = await response.json();
                 // Reverse the order of projects to display latest first
                 setProjects(data.reverse());
