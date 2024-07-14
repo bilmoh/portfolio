@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "summary": "Description of project one",
+        "mainImg": "/assets/img/quiz.jpg",
+        "intro": "this is project intro paragraph",
+        "description1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "liveLink": "http://www.google.co.uk",
+        "codeLink": "http://www.google.co.uk",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "GIT"
+        ],
+        "isFeatured": false,
+        "date": "2024-06-27"
+    },
+    {
+        "id": 2,
+        "title": "Project 2",
+        "summary": "Description of project one",
+        "mainImg": "/assets/img/quiz.jpg",
+        "intro": "this is project intro paragraph",
+        "description1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "description2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "liveLink": "http://www.google.co.uk",
+        "codeLink": "http://www.google.co.uk",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "GIT"
+        ],
+        "isFeatured": false,
+        "date": "2024-06-28"
+    }
+]
