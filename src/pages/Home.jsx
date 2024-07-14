@@ -63,19 +63,19 @@ export default function Home() {
                     <div className="home-hero__social">
                         <a href="https://www.linkedin.com/in/billal-mohammad/" className="home-hero__social-icon-link"
                             target="_blank" rel="noopener noreferrer">
-                            <img src="src/assets/img/icons/linkedin-ico.png" alt="LinkedIn Icon" className="home-hero__social-icon" />
+                            <img src="./src/assets/img/icons/linkedin-ico.png" alt="LinkedIn Icon" className="home-hero__social-icon" />
                         </a>
                     </div>
 
                     <div className="home-hero__social">
                         <a href="https://github.com/bilmoh" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
-                            <img src="src/assets/img/icons/github-ico.png" alt="GitHub Icon" className="home-hero__social-icon" />
+                            <img src="./src/assets/img/icons/github-ico.png" alt="GitHub Icon" className="home-hero__social-icon" />
                         </a>
                     </div>
 
                     <div className="home-hero__social">
                         <a href="https://x.com/bilmoh_codes" className="home-hero__social-icon-link" target="_blank" rel="noopener noreferrer">
-                            <img src="src/assets/img/icons/twitter-ico.png" alt="Twitter Icon" className="home-hero__social-icon" />
+                            <img src="./src/assets/img/icons/twitter-ico.png" alt="Twitter Icon" className="home-hero__social-icon" />
                         </a>
                     </div>
                 </div>
