@@ -19,12 +19,12 @@ export default function Header() {
                     <div className="header__logo-img-cont">
                         <img src="/assets/img/avatar.jpeg" alt="Billal Mohammad Logo Image" className="header__logo-img" />
                     </div>
-                    <Link className="header__logo-sub" to="/">BILMOH_CODES</Link>
+                    <Link to="/" className="header__logo-sub">BILMOH_CODES</Link>
                 </div>
 
                 <nav className={`header__links ${menuActive ? 'd-none' : ''}`}>
                     <div className="header__link-wrapper">
-                        <Link to="./#home" className="header__link" onClick={closeMenu}>
+                        <Link to="/" className="header__link" onClick={closeMenu}>
                             Home
                         </Link>
                         <Link to="./#projects" className="header__link" onClick={closeMenu}>
@@ -49,16 +49,16 @@ export default function Header() {
                 <div className="header__sm-menu-content">
                     <ul className="header__sm-menu-links">
                         <li className="header__sm-menu-link">
-                            <a href="./#home" onClick={closeMenu}>Home</a>
+                            <Link to="/#home" onClick={closeMenu}>Home</Link>
                         </li>
                         <li className="header__sm-menu-link">
-                            <a href="./#about" onClick={closeMenu}>About</a>
+                            <Link to="./#about" onClick={closeMenu}>About</Link>
                         </li>
                         <li className="header__sm-menu-link">
-                            <a href="./#projects" onClick={closeMenu}>Projects</a>
+                            <Link to="./#projects" onClick={closeMenu}>Projects</Link>
                         </li>
                         <li className="header__sm-menu-link">
-                            <a href="./#contact" onClick={closeMenu}>Contact</a>
+                            <Link to="./#contact" onClick={closeMenu}>Contact</Link>
                         </li>
                     </ul>
                 </div>
