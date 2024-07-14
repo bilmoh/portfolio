@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "coverImg": "./src/assets/img/note-taking-app.png",
+        "coverImg": "/assets/img/projects/note-taking-app.png",
         "title": "Note Taking App",
         "summary": "",
-        "featuredImg": "/assets/img/note-taking-app.png",
+        "featuredImg": "/assets/img/projects/note-taking-app.png",
         "intro": "",
         "problemStatement": "",
         "challengesSolutions": "",
@@ -30,10 +30,10 @@
     },
     {
         "id": 2,
-        "coverImg": "./src/assets/img/van-rental-app.jpg",
+        "coverImg": "/assets/img/projects/van-rental-app.jpg",
         "title": "Van Rental App",
         "summary": "",
-        "featuredImg": "/assets/img/van-rental-app.jpg",
+        "featuredImg": "/assets/img/projects/van-rental-app.jpg",
         "intro": "",
         "problemStatement": "",
         "challengesSolutions": "",
@@ -60,10 +60,10 @@
     },
     {
         "id": 3,
-        "coverImg": "./src/assets/img/todo-app.png",
+        "coverImg": "/assets/img/projects/todo-app.png",
         "title": "To-Do List",
         "summary": "",
-        "featuredImg": "/assets/img/todo-app.png",
+        "featuredImg": "/assets/img/projects/todo-app.png",
         "intro": "",
         "problemStatement": "",
         "challengesSolutions": "",
