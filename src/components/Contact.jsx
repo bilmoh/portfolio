@@ -3,6 +3,10 @@ import emailjs from '@emailjs/browser'
 
 import '../../src/index.css';
 
+const publicKey = import.meta.env.VITE_API_KEY
+const serviceId = import.meta.env.VITE_SERVICE_ID
+const templateId = import.meta.env.VITE_TEMPLATE_ID
+
 export const ContactUs = () => {
     const form = useRef();
 
@@ -10,8 +14,8 @@ export const ContactUs = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_21m3m38', 'template_1e18oel', form.current, {
-                publicKey: 'O-Khncy1u7I8d9y2h',
+            .sendForm(serviceId, templateId, form.current, {
+                publicKey: publicKey,
             })
             .then(
                 () => {
@@ -21,6 +25,7 @@ export const ContactUs = () => {
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    console.log(import.meta.env.VITE_API_KEY)
                 },
             );
     };
