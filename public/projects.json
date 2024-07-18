@@ -9,7 +9,7 @@
         "problemStatement": "",
         "challengesSolutions": "",
         "ImpactFeedback": "",
-        "liveLink": "http://www.google.co.uk",
+        "liveLink": "https://note-taking-app-pearl.vercel.app/",
         "codeLink": "https://github.com/bilmoh/note-taking",
         "features": [
             "Developed a dynamic note-taking application using React, enabling users to create, update, and delete notes with a rich-text editor.",
@@ -38,7 +38,7 @@
         "problemStatement": "",
         "challengesSolutions": "",
         "ImpactFeedback": "",
-        "liveLink": "http://www.google.co.uk",
+        "liveLink": "https://van-rental-app-ten.vercel.app/",
         "codeLink": "https://github.com/bilmoh/van-rental-app",
         "features": [
             "Developed a comprehensive van rental web application using React, allowing users to browse, view details, about vans.",
@@ -68,7 +68,7 @@
         "problemStatement": "",
         "challengesSolutions": "",
         "ImpactFeedback": "",
-        "liveLink": "http://www.google.co.uk",
+        "liveLink": "https://todo-list-one-weld.vercel.app/",
         "codeLink": "https://github.com/bilmoh/todo-list",
         "features": [
             "Implemented Create, Read, Update, and Delete (CRUD) operations to manage tasks, allowing users to create new tasks, update existing ones, and remove tasks they no longer need.",
